@@ -299,7 +299,8 @@ fun ExpenseItem(expense: Expense, onDeleteClick: () -> Unit) {
             Column {
                 Text(
                     text = expense.category,
-                    style = MaterialTheme.typography.titleSmall
+                    style = MaterialTheme.typography.titleSmall,
+                    modifier = Modifier.padding(4.dp)
                 )
                 Text(
                     text = expense.date,
